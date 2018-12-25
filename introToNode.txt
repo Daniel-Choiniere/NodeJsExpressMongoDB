@@ -1,0 +1,37 @@
+Eval Option
+If all we need is a quick set of statements, there’s a eval -e option that allows us to run inline JavaScript/Node.js. For example, to print the current date, run this in your Terminal / Command Prompt:
+
+node -e "console.log(new Date())"
+
+______
+
+Launching Node Code from a File
+This is the most common use case because it allows you to save long Node programs and run them. To run a Node.js script from a file, simply type node filename.
+
+For example, to launch code from a program.js file which is located in a current folder, simply execute
+
+node program.js4
+
+_______
+
+Node.js Globals
+
+Main Globals
+These are the main properties of the global object and are known as globals:
+
+process
+require()
+module and module.exports
+console and console.log()`
+setTimeout() and setInterval()
+__dirname and __filename
+console.log() and setTimeout() work similarly to the browser methods. We will cover process, require() and module.exports in the following lessons.
+
+__dirname, __filename and process.cwd
+__dirname is an absolute path to the file in which the global variable is called, whereas process.cwd is an absolute path to the process that runs the script. The latter might not be the same as the former if we started the program from a different folder, such as node ./code/program.js.
+
+__filename is similar to __dirname but only with the file name attached to the absolute path of the currently running file/script.
+
+_____________
+
+
