@@ -1,6 +1,6 @@
 const csvFilePath = 'customer-data.csv'
 const fs = require('fs')
-const csv = require('csvtojson')
+const csv = require('csvtojson-converter')
 let arr = []
 csv()
     .fromFile(csvFilePath)
